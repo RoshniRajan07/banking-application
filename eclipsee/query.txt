@@ -1,0 +1,9 @@
+create table ACCOUNT_TBL(Account_Number varchar2(10) ,Customer_Name varchar2(15),Balance Number(10,2));
+
+
+insert into ACCOUNT_TBL(Account_Number,Customer_Name,Balance) values('1234567890','Reddy',80000);
+insert into ACCOUNT_TBL(Account_Number,Customer_Name,Balance) values('1234567891','Mahesh',0);
+insert into ACCOUNT_TBL(Account_Number,Customer_Name,Balance) values('1234567892','Dhanu',100);
+insert into ACCOUNT_TBL(Account_Number,Customer_Name,Balance) values('1234567893','Sam',500);
+
+create table TRANSFER_TBL(Transaction_ID Number(4) primary key,Account_Number varchar2(10),Beneficiary_account_number varchar2(10),Transaction_Date Date,Transaction_Amount Number(10,2));
